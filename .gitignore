@@ -1,0 +1,10 @@
+*/
+/*
+!.gitignore
+!hypr
+!htop
+!waybar/
+!nvim/
+!nvim/lua
+!rofi/
+!bin/
