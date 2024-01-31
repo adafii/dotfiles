@@ -1,0 +1,145 @@
+[
+    {
+        "name": "bar0",
+        "output": "DP-1",
+        "layer": "top",
+        "position": "bottom",
+        "height": 20, 
+        "spacing": 0, // Gaps between modules (4px)
+
+        "modules-left": [
+            "custom/spacer1", 
+            "custom/arrow5", 
+            "hyprland/workspaces", 
+            "custom/arrow4", 
+            "hyprland/window"
+        ],
+        
+        "modules-right": [
+            "custom/arrow3", 
+            "idle_inhibitor", 
+            "custom/arrow2", 
+            "pulseaudio", 
+            "custom/arrow1", 
+            "clock", 
+            "custom/arrow0", 
+            "tray"
+        ],
+
+        "hyprland/workspaces": {
+            "format": "{name}",
+            "on-click": "activate",
+        },
+
+        "hyprland/window": {
+            "format": "{}",
+            "separate-outputs": true
+        },
+
+        "idle_inhibitor": {
+            "format": "{icon}",
+            "format-icons": {
+                "activated": "",
+                "deactivated": ""
+            }
+        },
+
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10
+        },
+
+        "clock": {
+            "format": "{:%Y-%m-%d %H:%M}",
+            "tooltip": true,
+            "tooltip-format": "<tt>{calendar}</tt>",
+            "calendar": {
+                "weeks-pos": "left"
+            }
+        },
+
+        "pulseaudio": {
+            "format": "{format_source} {icon} {volume}%",
+            "format-bluetooth": "{icon}  {volume}% {format_source}",
+            "format-bluetooth-muted": "   {format_source}",
+            "format-muted": "  {format_source}",
+            "format-source": " {volume}%",
+            "format-source-muted": "",
+            "format-icons": {
+                "headphone": "",
+                "hands-free": "",
+                "headset": "",
+                "default": ["", "", ""]
+            },
+            "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        },
+
+        "custom/arrow0": {
+            "format": "",
+            "tooltip": false
+        },
+
+        "custom/arrow1": {
+            "format": "",
+            "tooltip": false
+        },
+
+        "custom/arrow2": {
+            "format": "",
+            "tooltip": false
+        },
+
+        "custom/arrow3": {
+            "format": "",
+            "tooltip": false
+        },
+
+        "custom/arrow4": {
+            "format": "",
+            "tooltip": false
+        },
+        
+        "custom/arrow5": {
+            "format": "",
+            "tooltip": false
+        },
+        
+        "custom/spacer1": {
+            "format": " ",
+            "tooltip": false
+        }
+    }, {
+        "name": "barx",
+        "output": "!DP-1",
+        "layer": "top",
+        "position": "bottom",
+        "height": 19, 
+
+        "modules-left": ["custom/spacer1", "custom/arrow5", "hyprland/workspaces", "custom/arrow4", "hyprland/window"],
+        
+        "hyprland/workspaces": {
+            "format": "{name}",
+            "on-click": "activate",
+        },
+
+        "hyprland/window": {
+            "separate-outputs": true
+        },
+        
+        "custom/arrow4": {
+            "format": "",
+            "tooltip": false
+        },
+        
+        "custom/arrow5": {
+            "format": "",
+            "tooltip": false
+        },
+    
+        "custom/spacer1": {
+            "format": " ",
+            "tooltip": false
+        }
+    },
+]
+   

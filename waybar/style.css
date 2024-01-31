@@ -1,0 +1,153 @@
+@keyframes blink-critical {
+	to {
+		/*color: @white;*/
+		background-color: @critical;
+	}
+}
+
+@define-color trueblack #000000;
+@define-color truewhite #ffffff;
+@define-color black	#282828;
+@define-color white	#ebdbb2;
+@define-color whiter #f2f2f2;
+
+@define-color monokai_pink #ff6188;
+@define-color monokai_yellow #ffd866;
+@define-color monokai_blue #78dce8;
+@define-color monokai_orange #fc9867;
+@define-color monokai_green #a9dc76;
+
+
+@define-color inactive @monokai_green;
+@define-color active @whiter; /*#d9fc96;*/
+
+@define-color idle  @monokai_pink;
+@define-color sound @monokai_yellow;
+@define-color clock	@monokai_blue;
+
+/* Reset all styles */
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+	-gtk-icon-shadow: none;
+}
+
+/* The whole bar */
+#waybar {
+	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
+	color: @white;
+	font-family: MesloLGS Nerd Font;
+	font-size: 10pt;
+}
+
+#waybar.barx {
+    font-size: 9pt;
+}
+
+/* Each module */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#tray,
+#idle_inhibitor {
+	padding-left: 8pt;
+	padding-right: 8pt;
+}
+
+#workspaces {
+    background: @inactive;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/* Workspaces stuff */
+#workspaces button {
+	/*font-weight: bold;*/
+	color: @black;
+	background: @inactive;
+}
+
+#workspaces button.active {
+	color: @black;
+	background: @active;
+    /*font-weight: 400;*/
+}
+
+/* Contains an urgent window */
+#workspaces button.urgent {
+	color: @black;
+    font-weight: 600;
+	background: @inactive;
+}
+
+#window {
+	margin-right: 30pt;
+	margin-left: 30pt;
+}
+
+#pulseaudio {
+	background: @sound;
+	color: @black;
+}
+
+#idle_inhibitor {
+    background: @idle;
+    color: @black;
+}
+
+#tray {
+	background: @trueblack;
+}
+
+#clock {
+	background: @clock;
+	color: @black;
+}
+
+#custom-arrow0 {
+    font-size: 11pt;
+    color: @trueblack;
+    background: @clock; 
+}
+
+#custom-arrow1 {
+	font-size: 11pt;
+	color: @clock;
+	background: @sound;
+}
+
+#custom-arrow2 {
+	font-size: 11pt;
+	color: @sound;
+	background: @idle;
+}
+
+#custom-arrow3 {
+	font-size: 11pt;
+	color: @idle;
+	background: transparent;
+}
+
+#custom-arrow4 {
+	font-size: 11pt;
+	color: @monokai_green;
+	background: transparent;
+}
+
+#custom-arrow5 {
+	font-size: 11pt;
+	color: @trueblack;
+	background: @monokai_green;
+}
+
+#custom-spacer1 {
+    color: @trueblack;
+    background: @trueblack;
+    padding-left: 0.5em;
+}
