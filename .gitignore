@@ -1,11 +1,12 @@
 */
 /*
 !.gitignore
-!hypr
-!htop
+!hypr/
+!htop/
 !waybar/
 !nvim/
 !nvim/lua
 !rofi/
 !bin/
 !dunst/
+!kitty/
