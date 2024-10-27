@@ -5,7 +5,7 @@
 !htop/
 !waybar/
 !nvim/
-!nvim/lua
+!nvim/.gitignore
 !rofi/
 !bin/
 !dunst/
