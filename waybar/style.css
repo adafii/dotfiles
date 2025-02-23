@@ -17,13 +17,12 @@
 @define-color monokai_orange #fc9867;
 @define-color monokai_green #a9dc76;
 
-
 @define-color inactive @monokai_green;
 @define-color active @whiter; /*#d9fc96;*/
 
-@define-color idle  @monokai_pink;
-@define-color sound @monokai_yellow;
-@define-color clock	@monokai_blue;
+@define-color sound  @monokai_pink;
+@define-color clock @monokai_yellow;
+@define-color tray	@monokai_blue;
 
 /* Reset all styles */
 * {
@@ -96,11 +95,6 @@
 	color: @black;
 }
 
-#idle_inhibitor {
-    background: @idle;
-    color: @black;
-}
-
 #tray {
 	background: @trueblack;
 }
@@ -125,12 +119,12 @@
 #custom-arrow2 {
 	font-size: 11pt;
 	color: @sound;
-	background: @idle;
+	background: @transparent;
 }
 
 #custom-arrow3 {
 	font-size: 11pt;
-	color: @idle;
+	color: @monokai_pink;
 	background: transparent;
 }
 

@@ -16,8 +16,6 @@
         ],
         
         "modules-right": [
-            "custom/arrow3", 
-            "idle_inhibitor", 
             "custom/arrow2", 
             "pulseaudio", 
             "custom/arrow1", 
@@ -34,14 +32,6 @@
         "hyprland/window": {
             "format": "{}",
             "separate-outputs": true
-        },
-
-        "idle_inhibitor": {
-            "format": "{icon}",
-            "format-icons": {
-                "activated": "",
-                "deactivated": ""
-            }
         },
 
         "tray": {
